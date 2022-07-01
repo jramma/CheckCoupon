@@ -55,7 +55,7 @@ public class CheckCoupon {
 			fecha.replace(", ", "");
 			int fecha2 = Integer.parseInt(fecha);
 			int mes2 = mesToInt(mes);
-			if (mes1 < mes2 && fecha1 < fecha2) {
+			if (mes1 <= mes2 && fecha1 <= fecha2) {
 				result = true;
 			}
 		}
